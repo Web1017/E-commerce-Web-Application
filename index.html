@@ -11,6 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="Content\app.css">
 
 
@@ -57,17 +58,14 @@
                     </li>
                 </ul>
                 <div class="nav-info-items d-none d-lg-flex">
+
+
                     <!-- Prime Info -->
                     <div id="cart-info"
                         class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
-                        <span class="cart-info__icon mr-lg-3">
-                            <i class="fas fa-shopping-cart"></i>
-                        </span>
-                        <p class="mb-0 text-capitalize">
-                            Shopping Cart
-
-                        </p>
+                        <p class="snipcart-checkout mb-0 text-capitalize"> Shopping Cart </p>
                     </div>
+                    <!-- end of prime/single info -->
                 </div>
             </div>
         </nav>
@@ -82,52 +80,6 @@
                     </h1>
                     <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
                 </div>
-                <!-- Navbar Cart -->
-                <div class="cart" id="cart">
-                    <!-- Cart item -->
-                    <!-- <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-                        <img src="Assets/img-cart/cake-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
-                        <div class="item-text">
-                            <p id="cart-item-title" class="font-weight-bold mb-0">
-                                cart item</p>
-                            <span>$</span>
-                            <span id="cart-item-price" class="cart-item-price mb-0">5.99</span>
-
-                        </div>
-                        <a href="#" id="cart-item-remove" class="cart-item-remove">
-                            <i class="fas fa-trash"></i>
-                        </a>
-                    </div> -->
-                    <!--End of Cart item -->
-
-                    <!-- Cart item -->
-                    <!-- <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-                        <img src="Assets/img-cart/cupcake-1.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
-                        <div class="item-text">
-                            <p id="cart-item-title" class="font-weight-bold mb-0">
-                                cart item</p>
-                            <span>$</span>
-                            <span id="cart-item-price" class="cart-item-price mb-0">5.99</span>
-
-                        </div>
-                        <a href="#" id="cart-item-remove" class="cart-item-remove">
-                            <i class="fas fa-trash"></i>
-                        </a>
-                    </div> -->
-                    <!--End of Cart item -->
-                    <!-- total -->
-                    <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
-                        <h5>total</h5>
-                        <h5>$ <strong id="cart-total" class="font-weight-bold"></strong></h5>
-                    </div>
-                    <!-- End of total -->
-                    <!-- cart buttons-->
-                    <div class="cart-buttons-container mt-3 d-flex justify-content-between">
-                        <a href="#" id="clear-cart" class="btn btn-black text-uppercase">clear cart</a>
-                        <a href="#" id="clear-cart" class="btn btn-pink text-uppercase">checkout</a>
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -193,22 +145,37 @@
             </div>
 
             <!--End of Search box -->
+            <div class="snipcart-summary">
+                Number of items: <span class="snipcart-total-items"></span>
+                Total price: <span class="snipcart-total-price"></span>
+            </div>
+
+
+
 
             <!-- Store Items -->
             <div class="row store-items" id="store-items">
+
                 <!-- Single Items -->
                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
                     <div class="card single-item">
                         <div class="img-container">
-                            <img src="Assets/img/Store/store-photo-1.jpeg" class="card-img-top store-img" alt="">
+                            <img src="Assets/img/Store/sweets-item1.jpeg" class="card-img-top store-img" alt="">
                             <span class="store-item-icon">
                                 <i class="fas fa-shopping-cart"></i>
+                                <!-- Purchase Item 1-->
+                                <a href="#" class="snipcart-add-item" data-item-id="1" data-item-name="Sweets"
+                                    data-item-price="4.00" data-item-weight="20" data-item-url="/"
+                                    data-item-description="sweets" data-item-custom2-name="Type"
+                                    data-item-custom2-options="Croissants|Danishes|Pretzels|Strudels"
+                                    data-item-custom2-value="Croissants">
+                                    Buy now </a>
                             </span>
                         </div>
                         <div class="card-body">
                             <div class="card-text d-flex justify-content-between text-capitalize">
-                                <h5 id="store-item-name">Sweet Item</h5>
-                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold"> 3
+                                <h5 id="store-item-name">Our Sweets</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold"> 4
                                     </strong></h5>
                             </div>
                         </div>
@@ -219,14 +186,20 @@
                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
                     <div class="card single-item">
                         <div class="img-container">
-                            <img src="Assets/img/Store/store-photo-1.jpeg" class="card-img-top store-img" alt="">
+                            <img src="Assets/img/Store/cake-item2.jpeg" class="card-img-top store-img" alt="">
                             <span class="store-item-icon">
                                 <i class="fas fa-shopping-cart"></i>
+                                <!-- Purchase Item 2-->
+                                <a href="#" class="snipcart-add-item" data-item-id="2" data-item-name="Cake"
+                                    data-item-price="30.00" data-item-weight="20" data-item-url="/"
+                                    data-item-description="Cake" data-item-custom2-name="Type"
+                                    data-item-custom2-options="Pineapple|Mango|Cherry" data-item-custom2-value="Cherry">
+                                    Buy now </a>
                             </span>
                         </div>
                         <div class="card-body">
                             <div class="card-text d-flex justify-content-between text-capitalize">
-                                <h5 id="store-item-name">Cake Item 1</h5>
+                                <h5 id="store-item-name">Every day Cakes</h5>
                                 <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">
                                         30
                                     </strong></h5>
@@ -239,14 +212,21 @@
                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
                     <div class="card single-item">
                         <div class="img-container">
-                            <img src="Assets/img/Store/store-photo-1.jpeg" class="card-img-top store-img" alt="">
+                            <img src="Assets/img/Store/cupcake-item1.jpeg" class="card-img-top store-img" alt="">
                             <span class="store-item-icon">
                                 <i class="fas fa-shopping-cart"></i>
+                                <!-- Purchase Item 3-->
+                                <a href="#" class="snipcart-add-item" data-item-id="3" data-item-name="cupcake"
+                                    data-item-price="3.00" data-item-weight="20" data-item-url="/"
+                                    data-item-description="cupcake" data-item-custom2-name="Type"
+                                    data-item-custom2-options="Lemon|Black Forest|Bakery Style|Chocolate"
+                                    data-item-custom2-value="Chocolate">
+                                    Buy now </a>
                             </span>
                         </div>
                         <div class="card-body">
                             <div class="card-text d-flex justify-content-between text-capitalize">
-                                <h5 id="store-item-name">Cupcake Item</h5>
+                                <h5 id="store-item-name">delicious cupcakes</h5>
                                 <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold"> 3
                                     </strong></h5>
                             </div>
@@ -258,14 +238,21 @@
                 <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
                     <div class="card single-item">
                         <div class="img-container">
-                            <img src="Assets/img/Store/doughnut-item.png" class="card-img-top store-img" alt="">
+                            <img src="Assets/img/Store/doughnut-item2.jpeg" class="card-img-top store-img" alt="">
                             <span class="store-item-icon">
                                 <i class="fas fa-shopping-cart"></i>
+                                <!-- Purchase Item 4-->
+                                <a href="#" class="snipcart-add-item" data-item-id="3" data-item-name="doughnuts"
+                                    data-item-price="3.00" data-item-weight="20" data-item-url="/"
+                                    data-item-description="doughnuts" data-item-custom2-name="Type"
+                                    data-item-custom2-options="Cinnamon-Sugar Donut|Jelly Donut|Blueberry Donut|Vanilla-Frosted Donut"
+                                    data-item-custom2-value="Vanilla-Frosted Donut">
+                                    Buy now </a>
                             </span>
                         </div>
                         <div class="card-body">
                             <div class="card-text d-flex justify-content-between text-capitalize">
-                                <h5 id="store-item-name">Doughnut Item</h5>
+                                <h5 id="store-item-name">Tasty Doughnut</h5>
                                 <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold"> 3
                                     </strong></h5>
                             </div>
@@ -380,15 +367,22 @@
 
 
     <!-- Scripts GOES HERE -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
+        data-api-key="MTZhYjhlOTktYzk4NS00YzZmLTk4ZTctNzdiZmEwMzYzMmJkNjM2ODc0ODUyMTQ0NjM5MDUy" id="snipcart"></script>
+
     <script src="Scripts/app.js"></script>
 
 </body>

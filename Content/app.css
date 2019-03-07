@@ -36,6 +36,10 @@ body {
     background: var(--mainPink) !important;
 }
 
+a {
+    color: var(--mainBlack);
+}
+
 /* Navbar Links */
 
 .navbar-toggler {
@@ -57,7 +61,7 @@ body {
     color: var(--mainPink);
 }
 
-/* Cart Design */
+/* Navbar Cart Design */
 
 .cart-info__icon {
     color: var(--mainBlack);
@@ -167,6 +171,8 @@ body {
 
 .store-img {
     transition: all 1s ease-in-out;
+    /* width: 350px;
+height: 246px; */
 }
 
 .img-container:hover .store-img {
@@ -227,41 +233,4 @@ body {
 
 .footer-icon:hover {
     color: var(--mainPink);
-}
-
-/* Navbar Cart */
-
-.cart {
-    position: absolute;
-    min-height: 10rem;
-    background: rgba(255, 255, 255, 0);
-    top: 0;
-    right: 0;
-    transition: all 0.3s ease-in-out;
-    width: 0;
-    overflow: hidden;
-}
-
-.show-cart {
-    width: 18rem;
-    padding: 2rem 1.5rem;
-    transform: rotateY(-360deg);
-}
-
-.cart-item-remove {
-    color: var(--mainPink);
-    transition: all 1s ease-in-out;
-}
-
-.cart-item {
-    transition: all 2s ease-in-out;
-}
-
-.cart-item-remove:hover {
-    transform: scale(1.1);
-    color: var(--mainBlack);
-}
-
-.cart-item-price {
-    font-size: 0.8rem;
 }
