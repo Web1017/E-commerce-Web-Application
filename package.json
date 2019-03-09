@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Javid Niftaliyev",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "smooth-scroll": "^16.0.0"
+  }
 }

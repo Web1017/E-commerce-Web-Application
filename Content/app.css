@@ -110,8 +110,9 @@ a {
 
 .banner-link {
     font-size: 1.5rem;
-    color: var(--mainBlack);
-    border: 0.2rem solid var(--mainBlack);
+    color: var(--mainWhite);
+    border: 0.2rem solid var(--mainPink);
+    margin-right: 6rem;
 }
 
 .banner-link:hover {
@@ -171,8 +172,6 @@ a {
 
 .store-img {
     transition: all 1s ease-in-out;
-    /* width: 350px;
-height: 246px; */
 }
 
 .img-container:hover .store-img {

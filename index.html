@@ -23,7 +23,6 @@
     ================================================================== -->
     <title>Annabelles Cafe</title>
 
-
 </head>
 
 <body>
@@ -78,7 +77,8 @@
                     <h1 class="text-capitalize">
                         Welcome to <strong class="banner-title">Annabelle's</strong>
                     </h1>
-                    <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+
+                    <a data-scroll href="#about" class="btn banner-link text-uppercase my-2">explore</a>
                 </div>
             </div>
         </div>
@@ -245,7 +245,7 @@
                             <span class="store-item-icon">
                                 <i class="fas fa-shopping-cart"></i>
                                 <!-- Purchase Item 4-->
-                                <a href="#" class="snipcart-add-item" data-item-id="3" data-item-name="doughnuts"
+                                <a href="#" class="snipcart-add-item" data-item-id="4" data-item-name="doughnuts"
                                     data-item-price="3.00" data-item-weight="20"
                                     data-item-url="https://annabellesbakery.netlify.com/"
                                     data-item-description="doughnuts" data-item-custom2-name="Type"
@@ -257,6 +257,61 @@
                         <div class="card-body">
                             <div class="card-text d-flex justify-content-between text-capitalize">
                                 <h5 id="store-item-name">Tasty Doughnut</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold"> 3
+                                    </strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Single Items -->
+                <!-- Single Items -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="Assets/img/Store/bread-item1.jpeg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                                <!-- Purchase Item 5-->
+                                <a href="#" class="snipcart-add-item" data-item-id="5" data-item-name="bread"
+                                    data-item-price="2.00" data-item-weight="20"
+                                    data-item-url="https://annabellesbakery.netlify.com/" data-item-description="Bread"
+                                    data-item-custom2-name="Type"
+                                    data-item-custom2-options="Rolls|Farmhouse|Baguette|Buttery Rowies"
+                                    data-item-custom2-value="Baguette">
+                                    Buy now </a>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">Our Finest Bread</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">
+                                        2
+                                    </strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Single Items -->
+                <!-- Single Items -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="Assets/img/Store/cookie-item1.jpeg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                                <!-- Purchase Item 6-->
+                                <a href="#" class="snipcart-add-item" data-item-id="6" data-item-name="cookies"
+                                    data-item-price="2.00" data-item-weight="20"
+                                    data-item-url="https://annabellesbakery.netlify.com/"
+                                    data-item-description="cookies" data-item-custom2-name="Type"
+                                    data-item-custom2-options="Kitsilano|Cinnamon Roll Sugar|Black And White|Chocolate Chip"
+                                    data-item-custom2-value="Chocolate Chip">
+                                    Buy now </a>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">Sweet cookies</h5>
                                 <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold"> 3
                                     </strong></h5>
                             </div>
@@ -339,27 +394,21 @@
                         <span class="mr-4 footer-icon">
                             <i class="fas fa-map"></i>
                         </span>
-                        <span>
-                            144 Martin Groove, Toronto, ON
-                        </span>
+                        <span> 144 Martin Groove, Toronto, ON</span>
                     </p>
 
                     <p class="d-flex flex-wrap">
                         <span class="mr-4 footer-icon">
                             <i class="fas fa-envelope"></i>
                         </span>
-                        <span>
-                            Annabelles@hotmail.ca
-                        </span>
+                        <span>Annabelles@hotmail.ca</span>
                     </p>
 
                     <p class="d-flex flex-wrap">
                         <span class="mr-4 footer-icon">
                             <i class="fas fa-phone"></i>
                         </span>
-                        <span>
-                            416-444-2112
-                        </span>
+                        <span> 416-444-2112 </span>
                     </p>
                 </div>
             </div>
@@ -371,9 +420,6 @@
 
 
     <!-- Scripts GOES HERE -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -386,6 +432,8 @@
 
     <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
         data-api-key="MTZhYjhlOTktYzk4NS00YzZmLTk4ZTctNzdiZmEwMzYzMmJkNjM2ODc0ODUyMTQ0NjM5MDUy" id="snipcart"></script>
+
+    <script src="node_modules\smooth-scroll\dist\smooth-scroll.polyfills.min.js"></script>
 
     <script src="Scripts/app.js"></script>
 
