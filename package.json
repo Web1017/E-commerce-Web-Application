@@ -9,6 +9,7 @@
   "author": "Javid Niftaliyev",
   "license": "MIT",
   "dependencies": {
+    "lightbox2": "^2.10.0",
     "smooth-scroll": "^16.0.0"
   }
 }
