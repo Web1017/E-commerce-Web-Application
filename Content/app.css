@@ -47,7 +47,7 @@ a {
 }
 
 .toggler-icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--mainPink);
 }
 
@@ -111,13 +111,14 @@ a {
 .banner-link {
     font-size: 1.5rem;
     color: var(--mainWhite);
-    border: 0.2rem solid var(--mainPink);
+    border: 0.1rem solid var(--mainPink);
     margin-right: 6rem;
 }
 
 .banner-link:hover {
     background: var(--mainBlack);
     color: var(--mainPink);
+    transition: all 1s ease-in-out;
 }
 
 /* About Section */

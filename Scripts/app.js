@@ -1,6 +1,6 @@
 // Animate a Smooth Scrooling
-var scroll = new SmoothScroll('a[href*="#about"]', {
-    speed: 1800
+var scroll = new SmoothScroll('a[href*="#" ]', {
+    speed: 1600
 }
 
 );
